@@ -1,0 +1,61 @@
+* Core Apps
+** General Settings
+** Password Database
+** Contacts manager
+** Bitcoin wallet
+** App Creator Wizard
+*** In-browser HTML/CSS/JS code editor
+*** Create, Publish, download package
+** Publishing
+   There may be a valid use case for certain apps wanting to pusblish
+   to say Facebook or LinkedIn.
+*** Solution 1 - broker/monitor
+    A 3rd party app would be permitted by the user to publish to a
+    given site. The core app would facilitate the communication
+    between the 3rd party app on the target publishing site
+    (e.g. LinkedIn). It could ensure that all communication is
+    restricted to linkedin.com or even a set of URLs.
+*** Solution 2 - one core app per publishing target site
+    Create one core app per publishing target. One for Facebook and
+    another for LinkedIn. 3rd Party Apps would require that those core
+    apps be installed if the user would like to user their publishing
+    feature.
+*** Solution 3 - public profile / generated URL
+    There could be a publish hosting service that allows users to
+    publish to their profile or if they want to keep the page hidden a
+    cryptic URL could be generated so that only those who have think
+    link (perhaps shared in an email) can view it.
+** File Manager
+** 
+* 3rd Party
+** Social Uninstall (socialunistall.org / com is available)
+   Import the export data from social apps like Facebook so users can delete those accounts.
+** Resume / work history app
+*** Publish to linked-in, facebook
+*** Programmer types
+* JavaScript Libraries
+** Form creator
+   PouchDB/CouchDB can store arbitrary documents. Create a GUI form
+   designer that allows users to drag-and-drop from a standard list of
+   fundamental data types. The form will prepresent a new conglomerate
+   data type and will be given a name by the user. These conglomerate
+   new data types will be given standard CRUD operations. They will be
+   listable, searchable, etc. A thumbnail or "chip" will also be
+   designed by user to represent the view within a larger list.
+
+   An example of an application of this would be to create a contacts
+   list. The user will drag and drop a text fields for the name,
+   number, address, photo, etc. The thumbnail designer would be no
+   different than the original form designer, but the user would have
+   the understanding that it is meant for a thumbnail and design
+   accordingly. For the thumbnail view they would select the photo
+   (which may need to be shrunk) and the name, for example.
+
+   Single instance forms. For a contact conglomerate data type it
+   makes sense to have a CRUD, but some may be single instance. For
+   example, an app configuration page. In this case the user will
+   choose the "single instance" type and the name of it will represent
+   the page name.
+*** Build on PouchDB
+    PouchDB can save to CouchDB or other database and is a good target
+    for the in-browser data store.

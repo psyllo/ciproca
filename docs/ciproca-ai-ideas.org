@@ -1,0 +1,90 @@
+* UI scripting - AI talks CEF API to control browser
+  CEF's CefFrame has away to execute arbitrary JavaScript. Through
+  this the AI can control the UI.
+** Standard AI to Core interface could be created instead of aribtrary JS
+*** Example Browser API
+**** Brower_GetFrameList
+**** BrowserFrame_GoBack
+**** BrowserFrame_GetHtml
+* The minimalistic interview start
+  "Hello."
+* Initial setup via interview
+  "How are you?"
+  "Would you mind if I ask you a few questions, since we don't know eachother yet?"
+  "On a scale of 1-10 how advanced are you with <system name>?"
+  A hidden answer of 42 will give highest skill level.
+  "What is your name?"
+  "Is that your real name or nickname?"
+* Training the user
+  There is certain information, such as information about security and privacy that the user should know.
+* Verification loop
+  Instead of the classic, "Did you mean <blank>?" to which the user
+  responds yes/no, I believe it's often better to say, "I'm not sure
+  what <blank> means, but if it means <blank> then ..."
+
+  This is part of reducing verification when it's not important to be
+  sure to continue.
+
+  If the AI is still wrong, the user should have a way of correcting
+  via, "No, you misunderstood", or "do you not know what <blank>
+  means?" and proceeds to train the AI.
+  
+* The simple journal via an interview
+  "How are you?"
+  "How was your day?"
+  "What did you do?"
+  etc
+* Pronunciation correction
+  If a word is not known or if the user just wants to train the AI to
+  pronounce it differenty there should be a way to fix it.
+* Formal languages / Command lists
+  In cases where a language is formalized for a process, the AI can
+  inform the user of this and give them the option of learning about
+  the accepted language.
+
+  For example, if you want to generate a report, but it's not
+  necessarily an easy one, the AI can show you a list of examples or
+  commands and the structure of the language it accepts.
+* Conversational context switching and short term undo / redo
+  As with humans, we constantly clarify the context of each other
+  comments if there is possibility of misunderstanding.
+
+  If you are generating a list of contacts verbally with the AI and
+  make a mistake and simply want to "go back", there may be several
+  places to go back to. Go back to the beginning of this particular
+  contact entry? Or go back and start the contact entry session from
+  the beginning? To which the AI will say, you've created 5 contacts
+  in the past 5 minutes (or in this session) do you want to undo all
+  of this?
+* Sliders
+** Comedy
+** Sexuality
+** How much interaction the user wants
+** How proactive the AI should be
+** How apologetic vs sassy
+* Complimentary report generation
+  In idle time the AI can discover interesting facts and present them
+  to the user perhaps in spoken language or in a data vizualization.
+* 3rd party interaction
+** Authentication & Authorization
+  The A.I. always authenticates who it's talking before
+  interacting. This may implemented as verfying a token over a secure
+  channel. Of course all communication will be over a secure channel.
+*** On demand user approval
+    The user may pre-approve of certain interaction between the app on
+    the AI at install time, but that will not be required for all
+    situations. If the app starts to talk with the AI the AI can in
+    turn as the user if they would like to permit it, just once, for n
+    hours or indefinitely.
+** Use cases
+Record a milestone in the users journal/timeline. The A.I. will permit
+certain interaction with 3rd part apps.  Certain types of facts are
+better recorded by telling the A.I.  An example is a fact that should
+persist even if the app is deleted.  A 3rd party app doesn't know or
+care about how it is done.  It will speak to the A.I. in English.  The
+A.I. will only perform predetermined task types.
+
+Another type of app to A.I. conversation would be if the app would
+like to tell the user something via A.I. (voice etc).
+* JavaScript AI/Machine Learning/etc
+  https://www.youtube.com/watch?v=MVDC5bXCQoY

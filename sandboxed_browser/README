@@ -1,0 +1,4 @@
+The CEF project has a cefsimple project. I used that as a starting
+point for the sandboxed browser. These files are what I've edited in
+that project. There is also a URL parsing library I am using.
+(EdUrlParser: https://netmindms.github.io/urlparser/)

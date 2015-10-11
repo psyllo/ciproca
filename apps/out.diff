@@ -1,0 +1,61 @@
+Common subdirectories: out/.cljs-last-compiled-at and core/resources/public/js/out/.cljs-last-compiled-at
+Common subdirectories: out/cljs and core/resources/public/js/out/cljs
+diff out/cljs_deps.js core/resources/public/js/out/cljs_deps.js
+3d2
+< goog.addDependency("../core/util.js", ['core.util'], ['cljs.core']);
+18a18,19
+> goog.addDependency("../re_com/text.js", ['re_com.text'], ['re_com.util', 're_com.box', 'cljs.core', 're_com.validate']);
+> goog.addDependency("../re_com/tabs.js", ['re_com.tabs'], ['re_com.util', 're_com.box', 'cljs.core', 're_com.validate']);
+20c21
+< goog.addDependency("../re_com/tour.js", ['re_com.tour'], ['re_com.box', 'reagent.core', 'cljs.core', 're_com.buttons']);
+---
+> goog.addDependency("../re_com/alert.js", ['re_com.alert'], ['re_com.util', 're_com.box', 'cljs.core', 're_com.buttons', 're_com.validate']);
+22,31d22
+< goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
+< goog.addDependency("../cljs/core/async/impl/ioc_helpers.js", ['cljs.core.async.impl.ioc_helpers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
+< goog.addDependency("../re_com/modal_panel.js", ['re_com.modal_panel'], ['cljs.core', 're_com.validate']);
+< goog.addDependency("../re_com/tabs.js", ['re_com.tabs'], ['re_com.util', 're_com.box', 'cljs.core', 're_com.validate']);
+< goog.addDependency("../cljs/core/async/impl/buffers.js", ['cljs.core.async.impl.buffers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
+< goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl.dispatch'], ['cljs.core', 'cljs.core.async.impl.buffers', 'goog.async.nextTick']);
+< goog.addDependency("../cljs/core/async/impl/channels.js", ['cljs.core.async.impl.channels'], ['cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols']);
+< goog.addDependency("../figwheel/client/utils.js", ['figwheel.client.utils'], ['cljs.core', 'clojure.string']);
+< goog.addDependency("../cljs/reader.js", ['cljs.reader'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);
+< goog.addDependency("../figwheel/client/socket.js", ['figwheel.client.socket'], ['cljs.core', 'figwheel.client.utils', 'cljs.reader']);
+33,39d23
+< goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.timers'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.protocols']);
+< goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.timers']);
+< goog.addDependency("../figwheel/client/file_reloading.js", ['figwheel.client.file_reloading'], ['goog.string', 'goog.net.jsloader', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'clojure.set', 'figwheel.client.utils', 'clojure.string']);
+< goog.addDependency("../re_com/misc.js", ['re_com.misc'], ['re_com.util', 're_com.popover', 're_com.box', 'reagent.core', 'cljs.core', 're_com.validate']);
+< goog.addDependency("../re_com/dropdown.js", ['re_com.dropdown'], ['re_com.util', 're_com.box', 'reagent.core', 'cljs.core', 're_com.validate', 'clojure.string']);
+< goog.addDependency("../re_com/text.js", ['re_com.text'], ['re_com.util', 're_com.box', 'cljs.core', 're_com.validate']);
+< goog.addDependency("../re_com/alert.js", ['re_com.alert'], ['re_com.util', 're_com.box', 'cljs.core', 're_com.buttons', 're_com.validate']);
+43a28,29
+> goog.addDependency("../re_com/tour.js", ['re_com.tour'], ['re_com.box', 'reagent.core', 'cljs.core', 're_com.buttons']);
+> goog.addDependency("../re_com/misc.js", ['re_com.misc'], ['re_com.util', 're_com.popover', 're_com.box', 'reagent.core', 'cljs.core', 're_com.validate']);
+44a31
+> goog.addDependency("../re_com/dropdown.js", ['re_com.dropdown'], ['re_com.util', 're_com.box', 'reagent.core', 'cljs.core', 're_com.validate', 'clojure.string']);
+45a33
+> goog.addDependency("../re_com/modal_panel.js", ['re_com.modal_panel'], ['cljs.core', 're_com.validate']);
+50a39,49
+> goog.addDependency("../cljs/core/async/impl/protocols.js", ['cljs.core.async.impl.protocols'], ['cljs.core']);
+> goog.addDependency("../cljs/core/async/impl/ioc_helpers.js", ['cljs.core.async.impl.ioc_helpers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
+> goog.addDependency("../cljs/core/async/impl/buffers.js", ['cljs.core.async.impl.buffers'], ['cljs.core', 'cljs.core.async.impl.protocols']);
+> goog.addDependency("../cljs/core/async/impl/dispatch.js", ['cljs.core.async.impl.dispatch'], ['cljs.core', 'cljs.core.async.impl.buffers', 'goog.async.nextTick']);
+> goog.addDependency("../cljs/core/async/impl/channels.js", ['cljs.core.async.impl.channels'], ['cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols']);
+> goog.addDependency("../figwheel/client/utils.js", ['figwheel.client.utils'], ['cljs.core', 'clojure.string']);
+> goog.addDependency("../cljs/reader.js", ['cljs.reader'], ['goog.string', 'cljs.core', 'goog.string.StringBuffer']);
+> goog.addDependency("../figwheel/client/socket.js", ['figwheel.client.socket'], ['cljs.core', 'figwheel.client.utils', 'cljs.reader']);
+> goog.addDependency("../cljs/core/async/impl/timers.js", ['cljs.core.async.impl.timers'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.protocols']);
+> goog.addDependency("../cljs/core/async.js", ['cljs.core.async'], ['cljs.core.async.impl.channels', 'cljs.core.async.impl.dispatch', 'cljs.core', 'cljs.core.async.impl.buffers', 'cljs.core.async.impl.protocols', 'cljs.core.async.impl.ioc_helpers', 'cljs.core.async.impl.timers']);
+> goog.addDependency("../figwheel/client/file_reloading.js", ['figwheel.client.file_reloading'], ['goog.string', 'goog.net.jsloader', 'goog.Uri', 'cljs.core', 'goog.object', 'cljs.core.async', 'clojure.set', 'figwheel.client.utils', 'clojure.string']);
+54a54
+> goog.addDependency("../core/util.js", ['core.util'], ['cljs.core']);
+Common subdirectories: out/cljs_time and core/resources/public/js/out/cljs_time
+Common subdirectories: out/clojure and core/resources/public/js/out/clojure
+Common subdirectories: out/core and core/resources/public/js/out/core
+Common subdirectories: out/figwheel and core/resources/public/js/out/figwheel
+Common subdirectories: out/goog and core/resources/public/js/out/goog
+Only in out/: myproject
+Common subdirectories: out/re_com and core/resources/public/js/out/re_com
+Common subdirectories: out/reagent and core/resources/public/js/out/reagent
+Common subdirectories: out/secretary and core/resources/public/js/out/secretary
