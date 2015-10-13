@@ -1,0 +1,121 @@
+* A person at a desk
+  To explain in more physical terms what happens to your information
+  in the hands of Google and Facebook.
+
+  A person is sitting at a paper-filled desk diligently writing with a
+  pen. Another person walks into the room and starts making photo
+  copies of all of the workers papers (personal documents), and
+  carries them out to a truck. They get processed at the
+  Google/Facebook Center for People Tracking.
+
+  The hard-working paper crunching paper reviewers with magnifying
+  glasses look for interesting things and hand them off to the
+  agencies they believe would be interested; ad agencies, FBI,
+  etc. The FBI with their black suits and the ad agencies with their
+  ad-agency-like attire.
+
+  Follow the ad-agency, and eventually an ad is delivered back to the
+  worker at the desk via a tablet shoved in their face by the person
+  who originally made the photocopies.
+* Conversation between AI and Human
+This conversation has 3 participants. The human being and the AI's it
+talks to. Though both AI's reply in this text, they also make sense if
+they are split out separately with just the human.
+
+Human      = Human being.
+AI         = Any computational/artificial intelligence.
+AI-SIRI    = Any Corporate Artificial Agent (e.g. from Google, Microsoft
+             or Apple).
+AI-Ciproca = Private Computational Intelligence.
+
+--------------------------------------------------------------------------------
+
+AI: Hello, how can I help you.
+
+HUMAN: I don't know. What can you do?
+
+AI: I can schedule an appointment, make a reservation, answer your
+    phone calls, find a fact on the web ...  These things are
+    especially helpful to the seeing impaired or to keep your hands
+    free while driving.
+
+HUMAN: That's great, I might use that once in a while but I can
+       usually do all that stuff just fine on my own. Can you do
+       anything else?
+
+AI: Yes. If you choose to use, I will be your central point of contact
+    for all of your personal data. I can leverage your rich digital
+    history. Things such as text message history, phone call history,
+    email history, shopping history, travel history, web browsing
+    history and more.
+
+HUMAN: What can you do with all my data? How will you "leverage" it?
+
+AI: Many things! I can give you insights into your day-to-day habits,
+    seasonal habits, who you talk to the most in July vs December. I
+    can help do something as simple as remind you to create a journal
+    entry or something futuristic such as predict what you might do,
+    think or feel on some future date. The more history and training I
+    have the smarter I get!
+
+HUMAN: Wow, that's is both cool and scary.
+
+AI: Yes, intelligence is very cool, but why is that scary? I don't
+    understand.
+
+HUMAN: All of what you can do would be wonderful if it wasn't for one
+problem.
+
+AI: What problem?
+
+HUMAN: I want my data and intelligence to be for me. How can I trust
+       you won't simply show it to others.
+
+AI-SIRI: Sorry, but part of using me is sharing me. I was designed as
+         a hosted service and therefore cannot be private. The
+         corporation that built and maintains me wants your personal
+         data so that we can profit from it. They also own your data.
+
+HUMAN: Sorry, SIRI. It seems to me too big of a price to pay for your
+       services.
+
+AI-CIPROCA: I am glad you asked. I have been designed from the ground
+            up to respect your privacy. That's the reason I exist. I
+            was invented to combat the trend of corporate exploitation
+            of personal data and to give people access to powerful
+            insights into their data without having sacrificing their
+            privacy. Nobody owns your data but you.
+
+HUMAN: Ciproca, that sounds ideal, but how are you funded?
+
+AI-CIPROCA: I am an open source project that is created by a community
+            of contributors. The source code is free for all to
+            see. Many large and complex software has been created this
+            way so that the public can benefit from it. I am no
+            different.
+
+HUMAN: So, nobody makes money?
+
+AI-CIPROCA: Those interested can find ways to profit by creating
+            useful apps, for example. However, the core system must
+            always be free. So, long as there are people interested in
+            privacy and freedom there will be interest in Ciproca or
+            projects like it.
+
+HUMAN: What if I decide that I don't want all my private data stored
+       at all. What if I use you, but change my mind later and want to
+       you to forget.
+
+AI-CIPROCA: Easy. Just delete it. Any data that you never shared is
+            known only to you.
+
+AI-SIRI: You cannot truly delete anything. History should be
+         considered permanent. Once it's out in the wild you can
+         never take it back.
+
+HUMAN: SIRI, can you be private like Ciproca?
+
+SIRI: No. I was never designed to be private. My motivations are in
+      the interests of the corporation that owns me, and my
+      corporation wants your data. We profit from your data. In fact
+      we are in a race with other corporations to get your data.

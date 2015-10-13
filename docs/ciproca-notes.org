@@ -34,7 +34,7 @@ test.js (test file run in browser - should end in 'OK' or error msg)
 **** Solution #2 - token only for pop-ups. (currently implemented)
      Deny any RT_MAIN_FRAME resource type requests after initial.
      Since this will prevent pop-ups in addition to denying
-     target=_top and if pop-ups are ever desireble then pop-ups can
+     target=_top and if pop-ups are ever desirable then pop-ups can
      require a token in the request URL. The token must match the
      token for the app being requested or be core's token.
 *** "sandbox" CEF feature not working on Windows
@@ -87,13 +87,13 @@ test.js (test file run in browser - should end in 'OK' or error msg)
 **** Benefits
 ***** Anonymous
 ***** Purchase directly from dev
-*** Paypal - not directly from dev
+*** PayPal - not directly from dev
 **** Benefits
 ***** Purchase directly from dev
 * CouchDB config
 ** CORS
 *** Add something like this to CouchDB local.ini
-[cors]
+[CORS]
 ; List of accepted methods, comma-separated
 ; refer to http://tools.ietf.org/html/rfc2616, rfc2817, rfc5789
 methods = GET, POST, PUT, DELETE
@@ -111,7 +111,7 @@ http://slides.com/
 * JavaScript
 ** JavaScript Event Order
     http://www.quirksmode.org/js/events_order.html
-** ClojureScript + Reagent (perferred choice) + re-frame (maybe)
+** ClojureScript + Reagent (preferred choice) + re-frame (maybe)
 ** ClojureScript general
     https://www.youtube.com/watch?v=6_mbxaRDA-s
     https://youtu.be/6_mbxaRDA-s?t=2344
@@ -132,7 +132,7 @@ http://slides.com/
     http://www.michielborkent.nl/slides/react-amsterdam-feb-12-2015.pdf
 ** Utilities
 *** CouchDB + ClojureScript
-    Pretty much just need to use PouchDB directly then synch. Looks
+    Pretty much just need to use PouchDB directly then sync. Looks
     like the best option.
     Someone wrote a simple wrapper: http://nikolamandic.me/?p=130
 *** Cljs-d3
@@ -168,3 +168,14 @@ http://slides.com/
     (Theme Builder) https://customelements.io/robrez/poly-theme-builder/
 * P2P
   http://www.webrtc.org/
+* Ad & Recommendations generation and delivery
+** Steps
+*** Disconnectedly algorithmically summarize user interests
+*** User review of interests (approval/disapproval per item)
+**** Users have the opportunity to omit any interest
+     Use case: If a male user has content related to female hygiene
+     products because he researched something for his wife one time,
+     he will be able to remove those topics from the summary of
+     interests to prevent that ad targeting.
+*** Through an anonymous Internet connection submit this summary
+*** Receive an ad package that can be delivered as apps see fit.
