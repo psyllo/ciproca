@@ -175,7 +175,7 @@ bool isSameAppByUrl(std::string url1, std::string url2) {
 
 std::string core_app_url_scheme = "http";
 std::string core_app_host_name = "localhost";
-std::string core_app_port = "10000";
+std::string core_app_port = "3449";
 std::string database_url_scheme = "http";
 std::string database_host_name = "localhost";
 std::string database_port = "5984";
