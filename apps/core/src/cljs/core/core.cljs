@@ -5,6 +5,7 @@
               [goog.events :as events]
               [goog.history.EventType :as EventType]
               [re-com.core :refer [v-box h-box box input-text gap]] ; border
+              [clojure.string :refer [split]]
               ;;[re-com.box    :refer [border-args-desc]]
               ;; NOTE: Include PouchDB in HTML
               )
@@ -23,7 +24,7 @@
 
 
 (defn lhn-hide [_]
-  (let [e (.getElementById js/document "lhndiv")
+  (let [e (.getElementById js/document "lhn-div")
         v (.-display (.-style e))]
     (when (not (= v "none"))
       (set! (.-display (.-style e)) "none")))
@@ -31,10 +32,10 @@
 
 (defn lhn-show [_]
   (reset! should-hide-lhn false)
-  (let [e (.getElementById js/document "lhndiv")
+  (let [e (.getElementById js/document "lhn-div")
         v (.-display (.-style e))]
-    (when (not (= v ""))
-      (set! (.-display (.-style e)) "")))
+    (when (not (= v "initial"))
+      (set! (.-display (.-style e)) "initial")))
   nil)
 
 (defn lhn-delayed-hide [e]
@@ -81,35 +82,53 @@
   [:div [:h2 "Login"]
    [:div [:a {:href "#/"} "go to the home page"]]])
 
+(defn get-checkbox-for-label [label]
+  (.getElementById js/document (.-htmlFor label)))
+
+(defn toggle-wrap [e]
+  (let [id (.-id (get-checkbox-for-label (.-target e)))
+        wrap (.getElementById js/document (str "wrap-" (last (split id "-"))))]
+    (if (= "none" (.-display (.-style wrap)))
+      (set! (.-display (.-style wrap)) "block")
+      (set! (.-display (.-style wrap)) "none"))))
+
 (defn home-page []
-  (require-login)
-  ;;; Begin Left-Hand Nav
+  ;; (require-login)
+
   [:div {:id "maindiv"
          :style {:position "fixed" :height "100%" :width "100%"}}
-   [:lhnav {:id "lhndiv" :style {:z-index 200 :display "none"}
-            :on-click lhn-prevent-hide}
+
+   ;; Begin Left-Hand Nav
+   [:div {:id "lhn-div" :class "lhn-box"
+          :style {:z-index 200 :display "none"}
+          :on-click lhn-prevent-hide}
     [:div {:class "logo-area"}
      "Your logo here"]
-    [:nav
-     [:a {:href "http://www.bencluff.com"} "Home"]
+    [:div {:class "lhn-nav"}
+     [:a {:href "http://www.bencluff.com"}
+      "Home"]
      [:div {:class "nav-collapsible"}
-      [:input {:type "checkbox" :id "nav-collapsible-1"}]
-      [:label {:for "nav-collapsible-1"} "Portfolio"]
-      [:div {:class "wrap"}
+      [:input {:type "checkbox" :id "nav-collapsible-01"}]
+      [:label {:for "nav-collapsible-01"
+               :on-click toggle-wrap}
+       "Portfolio"]
+      [:div {:class "wrap" :id "wrap-01"}
        [:a {:href "/"} "Art"]
        [:a {:href "/"} "Design"]
        [:a {:href "/"} "Print"]
        [:a {:href "/"} "Web"]]]
      [:div {:class "nav-collapsible"}
-      [:input {:type "checkbox" :id "nav-collapsible-2"}]
-      [:label {:for "nav-collapsible-2"} "Blog" ]
-      [:div {:class "wrap"}
+      [:input {:type "checkbox" :id "nav-collapsible-02"}]
+      [:label {:for "nav-collapsible-02"
+               :on-click toggle-wrap}
+       "Blog"]
+      [:div {:class "wrap" :id "wrap-02"}
        [:a {:href "/"} "Art"]
        [:a {:href "/"} "Design"]
        [:a {:href "/"} "Print"]
        [:a {:href "/"} "Web"]]]
      [:a {:href "/"} "Contact"]]]
-   ;;; End Left-Hand Nav
+;;; End Left-Hand Nav
 
    [v-box :height "100%"
     :children
